@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href='https://fonts.googleapis.com/css?family=Kirang Haerang' rel='stylesheet'>
+<style>
+</style>
+<style type=text/css>
+    body{
+       background:#fff;
+       color:#444;
+       margin:0px;
+       padding:0px;
+    }
+    #gjs-canvas {
+        border: 0px solid #ccc;
+        margin: 0px;
+        width: calc(100%);
+        height: calc(100%);
+        position: absolute;
+        /** automatically made visible once game is loaded **/
+        display:none;
+    }
+    .footer {
+        position:absolute;
+        top: calc(100% - 5px);
+    }
+    #gjs-loader {
+        height: 100%;
+        padding: 0% 0% 0% 0%;
+    }
+</style>
+<script src="gamejs/gamejs-2.0.1.js"></script>
+<script>
+    require.setModuleRoot('./');
+    require.run('curve_game')
+</script>
+
+</html>
